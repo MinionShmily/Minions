@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MinionsBeta</string>
+    <string name="title_activity_click">ClickActivity</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="title_activity_sign">Sign</string>
+    <string name="title_activity_zhuche">zhucheActivity</string>
+</resources>

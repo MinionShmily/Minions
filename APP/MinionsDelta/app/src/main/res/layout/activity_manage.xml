@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shmily.minionsdelta.manageActivity"
+    android:background="#FFB6C1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff90b6"
+        android:id="@+id/text">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            />
+        <TextView
+            android:layout_toRightOf="@id/iv_back"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="settings"
+            android:textSize="40sp"
+            android:textColor="#FFFFFF"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/text"
+        android:id="@+id/tv_net"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text="网络"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_net2"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_net"
+        android:text="仅WIFI下联网"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_net3"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_net2"
+        android:text="使用2G/3G/4G网络播放"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_net4"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_net3"
+        android:text="使用2G/3G/4G网络下载"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/black1"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+
+        android:layout_below="@+id/switch3"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_below="@id/black1"
+        android:id="@+id/tv_play"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text="播放和下载"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_play2"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_play"
+        android:text="在线播放音质"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_play3"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_play2"
+        android:text="下载音质"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_play4"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_play3"
+        android:text="设置下载目录"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/tv_play4"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_below="@id/black2"
+        android:id="@+id/tv_instrument"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text="工具"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_instrument1"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_instrument"
+        android:text="桌面歌词"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_instrument2"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_instrument1"
+        android:text="桌面小部件"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_instrument3"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_instrument2"
+        android:text="锁屏显示"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/black3"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/tv_play4"
+        android:layout_alignParentStart="true" />
+
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_back"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:text="Back"-->
+
+        <!--android:layout_below="@id/text"-->
+        <!--/>-->
+
+    <include layout="@layout/content_manage" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_net2"
+        android:layout_alignStart="@+id/switch1" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_net2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_net3"
+        android:layout_alignStart="@+id/switch2" />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_instrument"
+        android:layout_alignStart="@+id/switch3" />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_instrument1"
+        android:layout_alignStart="@+id/switch4" />
+
+    <Switch
+        android:id="@+id/switch6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_instrument2"
+        android:layout_alignStart="@+id/switch5" />
+    <Button
+        android:id="@+id/switch_account"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="切换账号"
+        android:layout_below="@id/tv_instrument3"/>
+
+
+</RelativeLayout>

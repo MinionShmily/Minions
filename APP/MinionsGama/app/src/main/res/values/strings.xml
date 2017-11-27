@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MinionsGama</string>
+    <string name="title_activity_sign">SignActivity</string>
+    <string name="title_activity_xc">xcActivity</string>
+</resources>

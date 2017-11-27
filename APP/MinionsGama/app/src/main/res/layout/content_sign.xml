@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shmily.minionsgama.MainActivity"
+    android:background="@drawable/starynight1">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:paddingTop="8dp"/>
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="加入我们"
+        android:textColor="#fcfbfb"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:background="#113082ef"
+
+        />
+
+
+
+        />
+        <!--图片放在drawable里页面跳转失败-->
+        <!--android:src="@drawable/caiji"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+        <TextView
+            android:id="@+id/black"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <TextView
+            android:id="@+id/tv_users_sign"
+            android:layout_below="@id/black"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="Users:"
+            android:textSize="18dp"
+            android:textColor="#fefcfd"
+            android:gravity="center"
+            android:drawableLeft="@drawable/users"
+
+
+            android:layout_alignRight="@+id/tv_password"
+            android:layout_alignEnd="@+id/tv_password"
+            android:layout_alignLeft="@+id/tv_password"
+            android:layout_alignStart="@+id/tv_password" />
+        <EditText
+            android:id="@+id/et_users"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/black"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="Password:"
+            android:textSize="18dp"
+            android:textColor="#fafafb"
+            android:gravity="center"
+            android:layout_below="@id/tv_users_sign"
+            android:drawableLeft="@drawable/password"
+            android:layout_alignRight="@+id/tv_password2"
+            android:layout_alignEnd="@+id/tv_password2"
+            android:layout_alignLeft="@+id/tv_password2"
+            android:layout_alignStart="@+id/tv_password2" />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:inputType="numberPassword"
+            android:layout_below="@+id/tv_users_sign"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/tv_password2"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:text="Confirm："
+            android:textColor="#fafafb"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_password"
+            android:drawableLeft="@drawable/password"
+            />
+        <EditText
+            android:id="@+id/et_password2"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:inputType="numberPassword"
+            android:layout_below="@id/et_password"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/yzm"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:text="验证码："
+            android:textColor="#fafafb"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_marginLeft="17dp"
+            android:layout_below="@id/tv_password2"
+            android:drawableLeft="@drawable/yanzhenma"
+            />
+        <EditText
+
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:inputType="numberPassword"
+            android:id="@+id/et_yzm"
+            android:layout_below="@+id/et_password2"
+            android:layout_toLeftOf="@+id/getyzm" />
+        <TextView
+            android:id="@+id/getyzm"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="获取验证码"
+            android:textColor="#fafafb"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:layout_below="@+id/et_password2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yzm"
+            android:layout_centerHorizontal="true"
+            android:text="Sign"
+            android:textSize="25sp"
+            android:textColor="#fafafb"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_sign" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shmily.minionsbeta.Sign"
+    tools:showIn="@layout/activity_sign">
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/axi"
+        />
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="返回"
+        android:layout_below="@id/pic"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/btn_back"
+        android:id="@+id/cunchu"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="信息："
+            android:textSize="28dp"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/ev_cunchu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/cunchu">
+        <Button
+            android:id="@+id/btn_cunchu"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="存储"
+            />
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="展示"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">今夜有你</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">设置</string>
+    <string name="title_activity_manage">设置</string>
+    <string name="title_activity_album">相册</string>
+    <string name="title_activity_list">ListActivity</string>
+</resources>

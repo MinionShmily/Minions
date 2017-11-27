@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shmily.minionsbeta.zhucheActivity"
+    tools:showIn="@layout/activity_zhuche"
+    android:background="@drawable/starynight1">
+
+
+    <TextView
+        android:id="@+id/black"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+    <TextView
+        android:id="@+id/tv_users"
+        android:layout_below="@id/black"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Users:"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_below="@id/black"
+        android:id="@+id/et_uesrs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/tv_users"
+        android:textStyle="normal"
+        android:hint="Administrator"
+        />
+    <TextView
+        android:id="@+id/tv_Password"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_users"
+        android:text="Password:"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/tv_Password"
+        android:layout_below="@id/et_uesrs"
+        android:textStyle="normal"
+        android:hint="Password"
+        android:inputType="numberPassword"
+
+        />
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_Password"
+        android:text="Confirm:"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/et_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/tv_Password"
+        android:layout_below="@id/et_password"
+        android:textStyle="normal"
+        android:hint="Confirm Password"
+        android:inputType="numberPassword"
+        />
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:layout_marginLeft="82dp"
+        android:layout_marginStart="82dp"
+        android:layout_below="@+id/tv_confirm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btn_back2login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="back"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_below="@+id/et_confirm"
+        android:layout_toRightOf="@id/btn_submit"
+        android:layout_toEndOf="@id/btn_submit" />
+</RelativeLayout>
